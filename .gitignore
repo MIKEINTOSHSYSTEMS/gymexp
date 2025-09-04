@@ -1,6 +1,8 @@
 /XinstallX
+/install
 *.log
 .DS_Store
 *.zip
 *.workspace
 *.code-workspace
+*.txt
