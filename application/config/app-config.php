@@ -17,8 +17,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 * environments.
 *
 */
-//define('APP_BASE_URL_DEFAULT', 'http://gymexp/dev/'); // development
-define('APP_BASE_URL_DEFAULT', 'https://gymexp.mikeintoshsys.com/app/'); // production
+define('APP_BASE_URL_DEFAULT', 'http://gymexp/dev/'); // development
+//define('APP_BASE_URL_DEFAULT', 'https://gymexp.mikeintoshsys.com/app/'); // production
 
 /*
 * --------------------------------------------------------------------------

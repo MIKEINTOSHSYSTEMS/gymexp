@@ -1,5 +1,6 @@
 /XinstallX
 /install
+/backups
 *.log
 .DS_Store
 *.zip
