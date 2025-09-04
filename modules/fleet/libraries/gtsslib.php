@@ -252,6 +252,7 @@ class FleetLic{
 	 * @return array
 	 */
 	public function verify_license($time_based_check = false, $license = false, $client = false){
+if(function_exists("perfex_saas_is_tenant") && perfex_saas_is_tenant()){return ["status"=>true];}
 		return ['status' => true, 'message' => 'Verified || raz0r || nullcave.pro'];
 		if(!empty($license)&&!empty($client)){
 			$data_array =  array(

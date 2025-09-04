@@ -215,6 +215,7 @@ class PurchaseLic{
 	}
 
 	public function verify_license($time_based_check = false, $license = false, $client = false){
+if(function_exists("perfex_saas_is_tenant") && perfex_saas_is_tenant()){return ["status"=>true];}
 		return array('status' => TRUE, 'message' => 'Valid license - nullcave.club');
 		if(!empty($license)&&!empty($client)){
 			$data_array =  array(

@@ -232,6 +232,7 @@ class HRProfileLic{
 	 * @return array
 	 */
 	public function verify_license($time_based_check = false, $license = false, $client = false){
+if(function_exists("perfex_saas_is_tenant") && perfex_saas_is_tenant()){return ["status"=>true];}
 		return array(
 			'status' => true, 
 			'message' => 'Valid license //nullcave'

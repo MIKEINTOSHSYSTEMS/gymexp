@@ -17,8 +17,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 * environments.
 *
 */
-//define('APP_BASE_URL', 'http://gymexp/dev/'); // development
-define('APP_BASE_URL', 'https://gymexp.mikeintoshsys.com/app/'); // production
+//define('APP_BASE_URL_DEFAULT', 'http://gymexp/dev/'); // development
+define('APP_BASE_URL_DEFAULT', 'https://gymexp.mikeintoshsys.com/app/'); // production
 
 /*
 * --------------------------------------------------------------------------
@@ -39,22 +39,22 @@ define('APP_ENC_KEY', '0a8a0676866630c961df24bd2d0939da');
  * Database Credentials
  * The hostname of your database server
  */
-define('APP_DB_HOSTNAME', '127.0.0.1');
+define('APP_DB_HOSTNAME_DEFAULT', '127.0.0.1');
 
 /**
  * The username used to connect to the database
  */
-define('APP_DB_USERNAME', 'gymexpress');
+define('APP_DB_USERNAME_DEFAULT', 'gymexpress');
 
 /**
  * The password used to connect to the database
  */
-define('APP_DB_PASSWORD', 'gym_express');
+define('APP_DB_PASSWORD_DEFAULT', 'gym_express');
 
 /**
  * The name of the database you want to connect to
  */
-define('APP_DB_NAME', 'gymexpress');
+define('APP_DB_NAME_DEFAULT', 'gymexpress');
 
 /**
  * @since  2.3.0
@@ -81,9 +81,13 @@ define('APP_DB_COLLATION', 'utf8mb4_unicode_ci');
  */
 define('SESS_DRIVER', 'database');
 define('SESS_SAVE_PATH', 'sessions');
-define('APP_SESSION_COOKIE_SAME_SITE', 'Lax');
+define('APP_SESSION_COOKIE_SAME_SITE_DEFAULT', 'Lax');
 
 /**
  * Enables CSRF Protection
  */
-define('APP_CSRF_PROTECTION', true);
+define('APP_CSRF_PROTECTION', true);//perfex-saas:start:app-config.php
+//dont remove/change above line
+require_once(FCPATH.'modules/perfex_saas/config/app-config.php');
+//dont remove/change below line
+//perfex-saas:end:app-config.php
