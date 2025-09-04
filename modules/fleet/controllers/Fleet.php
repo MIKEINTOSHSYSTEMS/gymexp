@@ -4716,9 +4716,9 @@ class Fleet extends AdminController
             $data['required'][] = _l('hr_profile');
         }
 
-        if(!fleet_get_status_modules('purchase')){
-            $data['required'][] = _l('purchase_module');
-        }
+//        if(!fleet_get_status_modules('purchase')){
+//            $data['required'][] = _l('purchase_module');
+//        }
 
         if(count($data['required']) > 0){
             redirect('fleet/required_module_detail');
@@ -4730,15 +4730,15 @@ class Fleet extends AdminController
 
         $data['required'] = [];
         $data['required']['hr_profile'] = 0;
-        $data['required']['purchase'] = 0;
+//        $data['required']['purchase'] = 0;
 
         if(fleet_get_status_modules('hr_profile')){
             $data['required']['hr_profile'] = 1;
         }
 
-        if(fleet_get_status_modules('purchase')){
-            $data['required']['purchase'] = 1;
-        }
+//        if(fleet_get_status_modules('purchase')){
+//            $data['required']['purchase'] = 1;
+//        }
 
         $this->load->view('fleet/required_module', $data);
     }
