@@ -1,0 +1,5 @@
+/XinstallX
+*.log
+.DS_Store
+.zip
+*.workspace
