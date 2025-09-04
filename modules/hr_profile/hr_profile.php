@@ -33,6 +33,7 @@ hooks()->add_action('app_admin_footer', 'hr_profile_load_js');
 hooks()->add_action('app_search', 'hr_profile_load_search');
 hooks()->add_action('admin_init', 'hr_profile_module_init_menu_items');
 //add hook render profile icon on header menu
+//hooks()->add_action('admin_navbar_start', 'render_my_profile_icon');
 hooks()->add_action('after_render_top_search', 'render_my_profile_icon');
 hooks()->add_action('hr_profile_init',HR_PROFILE_MODULE_NAME.'_appint');
 hooks()->add_action('pre_activate_module', HR_PROFILE_MODULE_NAME.'_preactivate');

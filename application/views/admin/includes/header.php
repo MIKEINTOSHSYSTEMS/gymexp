@@ -168,7 +168,8 @@
             </div>
 
             <ul class="nav navbar-nav navbar-right -tw-mt-px">
-                <?php do_action_deprecated('after_render_top_search', [], '3.0.0', 'admin_navbar_start'); ?>
+                <?php //do_action_deprecated('after_render_top_search', [], '3.0.0', 'admin_navbar_start'); ?>
+                <?php do_action_deprecated('admin_navbar_start', [], '3.0.0', 'admin_navbar_start'); ?>
                 <?php hooks()->do_action('admin_navbar_start'); ?>
                 <?php if (staff_can('view', 'settings')) { ?>
                 <li>
